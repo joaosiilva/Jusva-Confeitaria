@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>Jusva Receitas</title>
+</head>
+
+<body>
+    <div class="caixa-superior">
+        <div class="cabecalho">
+            <h2 class="titulo-cabecalho">Jusva's</h2>
+            <a class="link-cabecalho" onclick="aparecerContato()">Contato</a>
+        </div>
+
+        <h1>Jusva Confeitaria</h1>
+
+        <form id="formulario-contato" action="https://formsubmit.co/theissylva@gmail.com" method="POST">
+            <h3 class="titulo-formulario">Entre em contato</h3>
+            <label>
+                Nome
+                <input type="text" name="nome" autocomplete="name" placeholder="Digite seu nome" required>
+            </label>
+
+            <label>
+                E-mail
+                <input type="email" name="email" minlength="20" maxlength="40" placeholder="Digite seu E-mail"
+                    required />
+            </label>
+
+            <label>
+                Número
+                <input type="tel" name="numero" placeholder="Digite seu número" required>
+            </label>
+
+            <label>
+                O que deseja:
+                <input type="text" name="lista" list="minha-lista" required>
+                <datalist id="minha-lista">
+                    <option value="Brownie">
+                    <option value="Brownies recheados">
+                    <option value="Brownies no pote">
+                    <option value="Bolos">
+                    <option value="Bolos recheados">
+                    <option value="Bolo no pote">
+                    <option value="Cookies">
+                    <option value="Cookies recheados">
+                    <option value="Cookies no pote">
+                    <option value="Donuts">
+                    <option value="Donuts">
+                    <option value="Kit especial (4 donuts, 2 brownie, 1 bolo no pote)">
+                </datalist>
+            </label>
+
+            <label>
+                Quantidade:
+                <input type="number" inputmode="numeric" name="quatity" min="1" max="5" step="1" required>
+            </label>
+
+            <label>
+                Fale Conosco
+                <textarea name="info" placeholder="Qual sua dúvida?"></textarea>
+            </label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <h2 id="titulo-meio">Nossos serviços</h2>
+
+    <div class="caixa-central">
+        <div class="card">
+            <h3 class="titulo-card">Bolos</h3>
+            <ul>
+                <li> Bolos </li>
+                <li> Bolos recheados </li>
+                <li> Bolo no pote </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Brownies</h3>
+            <ul>
+                <li> Brownies </li>
+                <li> Brownies recheados </li>
+                <li> Brownies no pote </li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3 class="titulo-card">Cookies</h3>
+            <ul>
+                <li> Cookies </li>
+                <li> Cookies recheados </li>
+                <li> Cookies no pote </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="caixa-inferior">
+        <h2 id="titulo-inferior">Sobre nós</h2>
+        <p class="paragrafo-inferior"> Estou presente no mercado há mais de 2 anos e sempre alavancando
+            nossas vendas e sempre inovando. Somos especialistas na fabricação e montagem de bolos recheados, naked
+            cake,
+            brownies, cookies, donut's e entre outros. </p>
+    </div>
+
+    <a class="whatsapp-link"
+        href="https://api.whatsapp.com/send?phone=5519991769363&text=Ol%C3%A1!%20Gostaria%20de%20saber%20o%20card%C3%A1pio"
+        target="_blank">
+        <i class="fa fa-whatsapp"></i>
+    </a>
+
+</body>
+
+<script>
+
+    let formulario = document.getElementById("formulario-contato")
+
+    console.log(formulario)
+
+    function aparecerContato() {
+        formulario.className = "mostrar-formulario"
+    }
+
+</script>
+
+</html>
