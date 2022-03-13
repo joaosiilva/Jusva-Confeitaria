@@ -116,17 +116,20 @@ button {
     text-align: center;
 }
 
-.caixa-central {
-    display: inline;
-    height: 370px;
-    padding: 0 60px 0 60px;
-    text-align: center;
+.card {
+    display: inline-block;
+    width: 300px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
 }
 
-.caixa-central1{
-    display: inline;
-    height: 370px;  
-    padding: 0 60px 0 60px;
+ul {
+    padding: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+    margin-left: 10px;
 }
 
 .caixa-inferior {
