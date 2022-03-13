@@ -117,7 +117,7 @@ button {
 }
 
 .card {
-    display: inline-block;
+    display: flex;
     width: 300px;
     border-radius: 10px;
     background-color: #FFFFFF;
